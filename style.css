@@ -1,0 +1,36 @@
+body {
+  background-color: #797979;
+  font-family: JetBrains Mono, monospace;
+}
+
+iframe {
+  margin-bottom: -5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.frame {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.video {
+  border-radius: 10px;
+  border: 10px solid #ffc371;
+}
+
+.gradient {
+  background: linear-gradient(180deg, #ff5f6d, #ffc371, #ff5f6d);
+  border-radius: 10px;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 20px;
+  position: relative;
+}
