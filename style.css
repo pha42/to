@@ -9,6 +9,9 @@
   --border-secondary: #6dd2e4 50%;
   --border-deg: 0deg;
   --background: linear-gradient(var(--border-deg), var(--border-primary), var(--border-secondary));
+  --img-opacity: 0;
+  --gif-opacity: 0;
+  --text-opacity: 1;
 }
 * {
   margin: 0;
@@ -20,6 +23,39 @@ body {
   background-color: black;
   color: var(--text-color);
   overflow: hidden;
+}
+
+.img-container {
+  position: relative;
+  top: 25%;
+  opacity: var(--img-opacity);
+  transition: ease-in-out 0.3s;
+}
+.img-container img {
+  position: absolute;
+  z-index: 9;
+}
+.img-container img:nth-child(1) {
+  left: 3rem;
+  top: 10rem;
+}
+.img-container img:nth-child(2) {
+  left: -10rem;
+  top: -15rem;
+}
+
+.gif-container {
+  position: relative;
+  opacity: var(--gif-opacity);
+  transition: ease-in-out 1s;
+  top: -8%;
+  left: -25%;
+}
+.gif-container img {
+  position: absolute;
+  z-index: 9;
+  height: 15rem; 
+  top: 50%;
 }
 
 .container {
@@ -37,6 +73,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: var(--text-opacity);
+  transition: ease-in-out 1s;
 }
 .opt-container {
   /* border: var(--border-test); */
